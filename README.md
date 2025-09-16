@@ -1,1 +1,11 @@
 # project-testing
+package com.example.tests;
+
+import org.testng.annotations.Test;
+
+public class SampleTest {
+    @Test
+    public void sampleTestMethod() {
+        System.out.println("Sample test method executed.");
+    }
+}
