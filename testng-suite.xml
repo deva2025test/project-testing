@@ -1,10 +1,16 @@
-package com.example.tests;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-import org.testng.annotations.Test;
+public class HelloWorldTest {
 
-public class SampleTest {
     @Test
-    public void sampleTestMethod() {
-        System.out.println("Sample test method executed.");
+    public void testHelloWorldMessage() {
+        String message = getHelloWorldMessage();
+        assertEquals("Hello World", message);
+    }
+
+    // Simple method under test
+    public String getHelloWorldMessage() {
+        return "Hello World";
     }
 }
